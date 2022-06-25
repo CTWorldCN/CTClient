@@ -16,6 +16,7 @@ public class Client {
     public static void start() {
         System.out.println("CTClient loading...");
         System.out.println("CTClient made by xyz8848");
+        System.out.println("https://github.com/CTWorldCN/CTClient");
         modManager = new ModManager();
         modManager.load();
         Display.setTitle(NAME + " " + VERSION + " | " + "Made by xyz8848");
