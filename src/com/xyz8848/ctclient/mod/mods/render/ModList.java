@@ -29,8 +29,8 @@ public class ModList extends Mod {
 
         int y = 0;
         for (Mod enableMod : enableMods) {
-            font.drawString(enableMod.getName(),width - font.getStringWidth(enableMod.getName()),y,0xFFFFFFFF);
-            y+= font.FONT_HEIGHT + 1;
+            font.drawString(enableMod.getName(), width - font.getStringWidth(enableMod.getName()), y, 0xFFFFFFFF);
+            y += font.FONT_HEIGHT + 1;
         }
     }
 }
