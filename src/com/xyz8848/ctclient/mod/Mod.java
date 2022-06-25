@@ -24,4 +24,8 @@ public class Mod {
     public void render() {
 
     }
+
+    public void update() {
+
+    }
 }
