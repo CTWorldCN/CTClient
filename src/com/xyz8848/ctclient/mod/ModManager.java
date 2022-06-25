@@ -1,6 +1,6 @@
 package com.xyz8848.ctclient.mod;
 
-import com.xyz8848.ctclient.mod.mods.render.LogoMod;
+import com.xyz8848.ctclient.mod.mods.render.Hud;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,6 +22,6 @@ public class ModManager {
     }
 
     public void load() {
-        mods.add(new LogoMod());
+        mods.add(new Hud());
     }
 }

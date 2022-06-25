@@ -9,8 +9,8 @@ import net.minecraft.client.gui.ScaledResolution;
  * @author xyz8848
  */
 
-public class LogoMod extends Mod {
-    public LogoMod() {
+public class Hud extends Mod {
+    public Hud() {
         super("Logo", true);
     }
 
