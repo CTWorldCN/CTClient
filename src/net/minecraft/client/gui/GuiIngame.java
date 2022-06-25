@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Random;
 
 import com.xyz8848.ctclient.Client;
+import com.xyz8848.ctclient.mod.Mod;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.GlStateManager;
@@ -158,11 +159,10 @@ public class GuiIngame extends Gui {
         if (this.mc.playerController.isSpectator()) {
             this.spectatorGui.renderTooltip(scaledresolution, partialTicks);
         } else {
+
+            Client.modManager.getEnableMods().forEach(Mod::render);
+
             this.renderTooltip(scaledresolution, partialTicks);
-
-            Minecraft.getMinecraft().fontRendererObj.drawString("CTClient" + " " + Client.VERSION, 0, 0, 0xFFFFFFFF);
-            Minecraft.getMinecraft().fontRendererObj.drawString("@xyz8848", 0, 9, 0xFFFFFFFF);
-
         }
 
         GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
