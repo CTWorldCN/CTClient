@@ -2,6 +2,7 @@ package com.xyz8848.ctclient.mod;
 
 import com.xyz8848.ctclient.mod.mods.movement.Sprint;
 import com.xyz8848.ctclient.mod.mods.render.Hud;
+import com.xyz8848.ctclient.mod.mods.render.ModList;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,5 +26,6 @@ public class ModManager {
     public void load() {
         mods.add(new Hud());
         mods.add(new Sprint());
+        mods.add(new ModList());
     }
 }
