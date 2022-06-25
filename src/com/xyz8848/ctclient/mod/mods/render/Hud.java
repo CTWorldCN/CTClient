@@ -11,7 +11,7 @@ import net.minecraft.client.gui.ScaledResolution;
 
 public class Hud extends Mod {
     public Hud() {
-        super("Logo", true);
+        super("Hud", true);
     }
 
     @Override
