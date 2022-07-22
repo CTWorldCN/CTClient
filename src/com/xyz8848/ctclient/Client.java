@@ -9,7 +9,7 @@ import org.lwjgl.opengl.Display;
 
 public class Client {
     public static final String NAME = "CTClient";
-    public static final String VERSION = "v1.0.0-pre2";
+    public static final String VERSION = "v1.0.0-pre3";
 
     public static ModManager modManager;
 

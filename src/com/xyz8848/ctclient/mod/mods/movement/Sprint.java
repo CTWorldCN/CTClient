@@ -14,9 +14,9 @@ public class Sprint extends Mod {
 
     @Override
     public void update() {
-        if (Minecraft.getMinecraft().gameSettings.keyBindForward.isPressed()
-                || Minecraft.getMinecraft().gameSettings.keyBindLeft.isPressed()
-                || Minecraft.getMinecraft().gameSettings.keyBindRight.isPressed()) {
+        if (Minecraft.getMinecraft().gameSettings.keyBindForward.isKeyDown()
+                || Minecraft.getMinecraft().gameSettings.keyBindLeft.isKeyDown()
+                || Minecraft.getMinecraft().gameSettings.keyBindRight.isKeyDown()) {
             Minecraft.getMinecraft().thePlayer.setSprinting(true);
         }
     }
